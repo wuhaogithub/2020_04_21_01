@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <!-- Start book django项目 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>客户端开发入门 | django项目</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./pythonclient/hellorabbitmq.html" />
+    
+    
+    <link rel="prev" href="./enter/concept/amqp/connect.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="3"
+        data-chapter-title="客户端开发入门"
+        data-filepath="pythonclient.md"
+        data-basepath="."
+        data-revision="Sun Nov 24 2019 08:04:49 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="bg.html">
+            
+                
+                    <a href="./bg.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        RabbitMQ简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="enter.html">
+            
+                
+                    <a href="./enter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        RabbitMQ入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="enter/concept.html">
+            
+                
+                    <a href="./enter/concept.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基本概念
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="enter/concept/exchange.html">
+            
+                
+                    <a href="./enter/concept/exchange.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Exchange\(交换器\)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="enter/concept/connectionchannel.html">
+            
+                
+                    <a href="./enter/concept/connectionchannel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        Channel\(消息通道\)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="enter/concept/amqp.html">
+            
+                
+                    <a href="./enter/concept/amqp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        AMQP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="enter/concept/amqp/exchange.html">
+            
+                
+                    <a href="./enter/concept/amqp/exchange.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                        交换机
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="enter/concept/amqp/queue.html">
+            
+                
+                    <a href="./enter/concept/amqp/queue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                        队列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="enter/concept/amqp/bind.html">
+            
+                
+                    <a href="./enter/concept/amqp/bind.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                        绑定
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="enter/concept/amqp/consumer.html">
+            
+                
+                    <a href="./enter/concept/amqp/consumer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                        消费者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="enter/concept/amqp/message.html">
+            
+                
+                    <a href="./enter/concept/amqp/message.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.5.</b>
+                        
+                        消息机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="enter/concept/amqp/connect.html">
+            
+                
+                    <a href="./enter/concept/amqp/connect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.6.</b>
+                        
+                        连接
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="3" data-path="pythonclient.html">
+            
+                
+                    <a href="./pythonclient.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        客户端开发入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="pythonclient/hellorabbitmq.html">
+            
+                
+                    <a href="./pythonclient/hellorabbitmq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        快速入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="pythonclient/queue.html">
+            
+                
+                    <a href="./pythonclient/queue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        工作队列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="pythonclient/publishsubscribe.html">
+            
+                
+                    <a href="./pythonclient/publishsubscribe.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        发布/订阅
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="pythonclient/routing.html">
+            
+                
+                    <a href="./pythonclient/routing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        路由
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="pythonclient/topics.html">
+            
+                
+                    <a href="./pythonclient/topics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        主题交换机
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="pythonclient/rpc.html">
+            
+                
+                    <a href="./pythonclient/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        远程过程调用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >django项目</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5BA2;&#x6237;&#x7AEF;&#x5F00;&#x53D1;&#x5165;&#x95E8;">&#x5BA2;&#x6237;&#x7AEF;&#x5F00;&#x53D1;&#x5165;&#x95E8;</h1>
+<p>RabbitMQ&#x4F7F;&#x7528;&#x7684;&#x662F;AMQP 0.9.1&#x534F;&#x8BAE;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x7684;&#x5F00;&#x653E;&#x3001;&#x901A;&#x7528;&#x7684;&#x534F;&#x8BAE;&#x3002;&#x9488;&#x5BF9;<a href="https://www.rabbitmq.com/devtools.html" target="_blank">&#x4E0D;&#x540C;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;</a>&#x6709;&#x5927;&#x91CF;&#x7684;RabbitMQ&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x7528;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x7CFB;&#x5217;&#x6559;&#x7A0B;&#x4E2D;&#xFF0C;RabbitMQ&#x56E2;&#x961F;&#x63A8;&#x8350;&#x4F7F;&#x7528;<a href="https://pika.readthedocs.org/en/0.10.0/#" target="_blank">Pika</a>&#x8FD9;&#x4E2A;Python&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<a href="https://pip.pypa.io/en/stable/quickstart/" target="_blank">pip</a>&#x8FD9;&#x4E2A;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3002;</p>
+<p>&#x6307;&#x5B9A;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x5B89;&#x88C5;pika</p>
+<p><a href="https://github.com/pika/pika" target="_blank">pika&#x6587;&#x6863;</a></p>
+<pre><code>pip install pika --upgrade
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./enter/concept/amqp/connect.html" class="navigation navigation-prev " aria-label="Previous page: 连接"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./pythonclient/hellorabbitmq.html" class="navigation navigation-next " aria-label="Next page: 快速入门"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontsettings":{"family":"sans","size":2,"theme":"white"},"toggle-chapters":{},"splitter":{},"emphasize":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book django项目 -->
+</html>

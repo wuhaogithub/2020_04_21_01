@@ -1,0 +1,590 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <!-- Start book django项目 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>路由 | django项目</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../pythonclient/topics.html" />
+    
+    
+    <link rel="prev" href="../pythonclient/publishsubscribe.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="3.4"
+        data-chapter-title="路由"
+        data-filepath="pythonclient/routing.md"
+        data-basepath=".."
+        data-revision="Sun Nov 24 2019 08:04:49 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="bg.html">
+            
+                
+                    <a href="../bg.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        RabbitMQ简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="enter.html">
+            
+                
+                    <a href="../enter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        RabbitMQ入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="enter/concept.html">
+            
+                
+                    <a href="../enter/concept.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基本概念
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="enter/concept/exchange.html">
+            
+                
+                    <a href="../enter/concept/exchange.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Exchange\(交换器\)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="enter/concept/connectionchannel.html">
+            
+                
+                    <a href="../enter/concept/connectionchannel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        Channel\(消息通道\)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="enter/concept/amqp.html">
+            
+                
+                    <a href="../enter/concept/amqp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        AMQP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="enter/concept/amqp/exchange.html">
+            
+                
+                    <a href="../enter/concept/amqp/exchange.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                        交换机
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="enter/concept/amqp/queue.html">
+            
+                
+                    <a href="../enter/concept/amqp/queue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                        队列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="enter/concept/amqp/bind.html">
+            
+                
+                    <a href="../enter/concept/amqp/bind.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                        绑定
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="enter/concept/amqp/consumer.html">
+            
+                
+                    <a href="../enter/concept/amqp/consumer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                        消费者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="enter/concept/amqp/message.html">
+            
+                
+                    <a href="../enter/concept/amqp/message.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.5.</b>
+                        
+                        消息机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="enter/concept/amqp/connect.html">
+            
+                
+                    <a href="../enter/concept/amqp/connect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.6.</b>
+                        
+                        连接
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="pythonclient.html">
+            
+                
+                    <a href="../pythonclient.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        客户端开发入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="pythonclient/hellorabbitmq.html">
+            
+                
+                    <a href="../pythonclient/hellorabbitmq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        快速入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="pythonclient/queue.html">
+            
+                
+                    <a href="../pythonclient/queue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        工作队列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="pythonclient/publishsubscribe.html">
+            
+                
+                    <a href="../pythonclient/publishsubscribe.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        发布/订阅
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="pythonclient/routing.html">
+            
+                
+                    <a href="../pythonclient/routing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        路由
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="pythonclient/topics.html">
+            
+                
+                    <a href="../pythonclient/topics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        主题交换机
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="pythonclient/rpc.html">
+            
+                
+                    <a href="../pythonclient/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        远程过程调用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >django项目</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x8DEF;&#x7531;routing">&#x8DEF;&#x7531;(Routing)</h1>
+<p>&#x4E0A;&#x4E00;&#x5C0F;&#x8282;&#xFF0C;&#x6211;&#x4EEC;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x3002;&#x53EF;&#x4EE5;&#x628A;&#x65E5;&#x5FD7;&#x6D88;&#x606F;&#x5E7F;&#x64AD;&#x7ED9;&#x591A;&#x4E2A;&#x63A5;&#x6536;&#x8005;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x65B0;&#x589E;&#x4E00;&#x4E2A;&#x529F;&#x80FD; &#x2014;&#x2014; &#x4F7F;&#x5F97;&#x5B83;&#x80FD;&#x591F;&#x53EA;&#x8BA2;&#x9605;&#x6D88;&#x606F;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x96C6;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x628A;&#x4E25;&#x91CD;&#x7684;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x5199;&#x5165;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF08;&#x5B58;&#x50A8;&#x5230;&#x78C1;&#x76D8;&#xFF09;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x4ECD;&#x7136;&#x628A;&#x6240;&#x6709;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x8F93;&#x51FA;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x4E2D;</p>
+<h2 id="&#x7ED1;&#x5B9A;&#xFF08;bindings&#xFF09;">&#x7ED1;&#x5B9A;&#xFF08;Bindings&#xFF09; </h2>
+<p>&#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x8FC7;&#x7ED1;&#x5B9A;&#xFF08;bindings&#xFF09;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>channel.queue_bind(exchange=exchange_name,
+                   queue=queue_name)
+</code></pre><p>&#x7ED1;&#x5B9A;&#xFF08;binding&#xFF09;&#x662F;&#x6307;&#x4EA4;&#x6362;&#x673A;&#xFF08;exchange&#xFF09;&#x548C;&#x961F;&#x5217;&#xFF08;queue&#xFF09;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7406;&#x89E3;&#x4E3A;&#xFF1A;&#x8FD9;&#x4E2A;&#x961F;&#x5217;&#xFF08;queue&#xFF09;&#x5BF9;&#x8FD9;&#x4E2A;&#x4EA4;&#x6362;&#x673A;&#xFF08;exchange&#xFF09;&#x7684;&#x6D88;&#x606F;&#x611F;&#x5174;&#x8DA3;&#x3002;</p>
+<p>&#x7ED1;&#x5B9A;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x5E26;&#x4E0A;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;routing_key&#x53C2;&#x6570;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x4E0E;basic_publish&#x7684;&#x53C2;&#x6570;&#x6DF7;&#x6DC6;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x53EB;&#x505A;&#x7ED1;&#x5B9A;&#x952E;&#xFF08;binding key&#xFF09;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5E26;&#x7ED1;&#x5B9A;&#x952E;&#x7684;&#x7ED1;&#x5B9A;&#x3002;</p>
+<pre><code>channel.queue_bind(exchange=exchange_name,
+                   queue=queue_name,
+                   routing_key=&apos;black&apos;)
+</code></pre><p>&#x7ED1;&#x5B9A;&#x952E;&#x7684;&#x610F;&#x4E49;&#x53D6;&#x51B3;&#x4E8E;&#x4EA4;&#x6362;&#x673A;&#xFF08;exchange&#xFF09;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x4F7F;&#x7528;&#x8FC7;&#x7684;&#x6247;&#x578B;&#x4EA4;&#x6362;&#x673A;&#xFF08;fanout exchanges&#xFF09;&#x4F1A;&#x5FFD;&#x7565;&#x8FD9;&#x4E2A;&#x503C;&#x3002;</p>
+<h2 id="&#x76F4;&#x8FDE;&#x4EA4;&#x6362;&#x673A;&#xFF08;direct-exchange&#xFF09;">&#x76F4;&#x8FDE;&#x4EA4;&#x6362;&#x673A;&#xFF08;Direct exchange&#xFF09; </h2>
+<p>&#x6211;&#x4EEC;&#x7684;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x5E7F;&#x64AD;&#x6240;&#x6709;&#x7684;&#x6D88;&#x606F;&#x7ED9;&#x6240;&#x6709;&#x7684;&#x6D88;&#x8D39;&#x8005;&#xFF08;consumers&#xFF09;&#x3002;&#x6211;&#x4EEC;&#x6253;&#x7B97;&#x6269;&#x5C55;&#x5B83;&#xFF0C;&#x4F7F;&#x5176;&#x57FA;&#x4E8E;&#x65E5;&#x5FD7;&#x7684;&#x4E25;&#x91CD;&#x7A0B;&#x5EA6;&#x8FDB;&#x884C;&#x6D88;&#x606F;&#x8FC7;&#x6EE4;&#x3002;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x4E5F;&#x8BB8;&#x53EA;&#x662F;&#x5E0C;&#x671B;&#x5C06;&#x6BD4;&#x8F83;&#x4E25;&#x91CD;&#x7684;&#x9519;&#x8BEF;&#xFF08;error&#xFF09;&#x65E5;&#x5FD7;&#x5199;&#x5165;&#x78C1;&#x76D8;&#xFF0C;&#x4EE5;&#x514D;&#x5728;&#x8B66;&#x544A;&#xFF08;warning&#xFF09;&#x6216;&#x8005;&#x4FE1;&#x606F;&#xFF08;info&#xFF09;&#x65E5;&#x5FD7;&#x4E0A;&#x6D6A;&#x8D39;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x6247;&#x578B;&#x4EA4;&#x6362;&#x673A;&#xFF08;fanout exchange&#xFF09;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7075;&#x6D3B;&#x6027; &#x2014;&#x2014; &#x5B83;&#x80FD;&#x505A;&#x7684;&#x4EC5;&#x4EC5;&#x662F;&#x5E7F;&#x64AD;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x4F7F;&#x7528;&#x76F4;&#x8FDE;&#x4EA4;&#x6362;&#x673A;&#xFF08;direct exchange&#xFF09;&#x6765;&#x4EE3;&#x66FF;&#x3002;&#x8DEF;&#x7531;&#x7684;&#x7B97;&#x6CD5;&#x5F88;&#x7B80;&#x5355; &#x2014;&#x2014; &#x4EA4;&#x6362;&#x673A;&#x5C06;&#x4F1A;&#x5BF9;&#x7ED1;&#x5B9A;&#x952E;&#xFF08;binding key&#xFF09;&#x548C;&#x8DEF;&#x7531;&#x952E;&#xFF08;routing key&#xFF09;&#x8FDB;&#x884C;&#x7CBE;&#x786E;&#x5339;&#x914D;&#xFF0C;&#x4ECE;&#x800C;&#x786E;&#x5B9A;&#x6D88;&#x606F;&#x8BE5;&#x5206;&#x53D1;&#x5230;&#x54EA;&#x4E2A;&#x961F;&#x5217;&#x3002;</p>
+<p>&#x4E0B;&#x56FE;&#x80FD;&#x591F;&#x5F88;&#x597D;&#x7684;&#x63CF;&#x8FF0;&#x8FD9;&#x4E2A;&#x573A;&#x666F;&#xFF1A;</p>
+<p><img src="../assets/p_x_direct_q1_q2.png" alt=""></p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x76F4;&#x8FDE;&#x4EA4;&#x6362;&#x673A; X&#x548C;&#x4E24;&#x4E2A;&#x961F;&#x5217;&#x8FDB;&#x884C;&#x4E86;&#x7ED1;&#x5B9A;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#x4F7F;&#x7528;orange&#x4F5C;&#x4E3A;&#x7ED1;&#x5B9A;&#x952E;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x961F;&#x5217;&#x6709;&#x4E24;&#x4E2A;&#x7ED1;&#x5B9A;&#xFF0C;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;black&#x4F5C;&#x4E3A;&#x7ED1;&#x5B9A;&#x952E;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;green&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x4EE5;&#x6765;&#xFF0C;&#x5F53;&#x8DEF;&#x7531;&#x952E;&#x4E3A;orange&#x7684;&#x6D88;&#x606F;&#x53D1;&#x5E03;&#x5230;&#x4EA4;&#x6362;&#x673A;&#xFF0C;&#x5C31;&#x4F1A;&#x88AB;&#x8DEF;&#x7531;&#x5230;&#x961F;&#x5217;Q1&#x3002;&#x8DEF;&#x7531;&#x952E;&#x4E3A;black&#x6216;&#x8005;green&#x7684;&#x6D88;&#x606F;&#x5C31;&#x4F1A;&#x8DEF;&#x7531;&#x5230;Q2&#x3002;&#x5176;&#x4ED6;&#x7684;&#x6240;&#x6709;&#x6D88;&#x606F;&#x90FD;&#x5C06;&#x4F1A;&#x88AB;&#x4E22;&#x5F03;&#x3002;</p>
+<h2 id="&#x591A;&#x4E2A;&#x7ED1;&#x5B9A;&#xFF08;multiple-bindings&#xFF09;">&#x591A;&#x4E2A;&#x7ED1;&#x5B9A;&#xFF08;Multiple bindings&#xFF09; </h2>
+<p><img src="../assets/p_x_direct_multiple.png" alt=""></p>
+<p>&#x591A;&#x4E2A;&#x961F;&#x5217;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x7ED1;&#x5B9A;&#x952E;&#x662F;&#x5408;&#x6CD5;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;X&#x548C;Q1&#x4E4B;&#x95F4;&#x7684;&#x7ED1;&#x5B9A;&#xFF0C;&#x4F7F;&#x7528;black&#x7ED1;&#x5B9A;&#x952E;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x76F4;&#x8FDE;&#x4EA4;&#x6362;&#x673A;&#x5C31;&#x548C;&#x6247;&#x578B;&#x4EA4;&#x6362;&#x673A;&#x7684;&#x884C;&#x4E3A;&#x4E00;&#x6837;&#xFF0C;&#x4F1A;&#x5C06;&#x6D88;&#x606F;&#x5E7F;&#x64AD;&#x5230;&#x6240;&#x6709;&#x5339;&#x914D;&#x7684;&#x961F;&#x5217;&#x3002;&#x5E26;&#x6709;black&#x8DEF;&#x7531;&#x952E;&#x7684;&#x6D88;&#x606F;&#x4F1A;&#x540C;&#x65F6;&#x53D1;&#x9001;&#x5230;Q1&#x548C;Q2&#x3002;</p>
+<h2 id="&#x53D1;&#x9001;&#x65E5;&#x5FD7;">&#x53D1;&#x9001;&#x65E5;&#x5FD7; </h2>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;&#x4E00;&#x4E2A;&#x76F4;&#x8FDE;&#x4EA4;&#x6362;&#x673A;&#xFF0C;&#x628A;&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#x4F5C;&#x4E3A;&#x8DEF;&#x7531;&#x952E;&#x3002;&#x8FD9;&#x6837;&#x63A5;&#x6536;&#x65E5;&#x5FD7;&#x7684;&#x811A;&#x672C;&#x5C31;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4E25;&#x91CD;&#x7EA7;&#x522B;&#x6765;&#x9009;&#x62E9;&#x5B83;&#x60F3;&#x8981;&#x5904;&#x7406;&#x7684;&#x65E5;&#x5FD7;&#x3002;&#x6211;&#x4EEC;&#x5148;&#x770B;&#x770B;&#x53D1;&#x9001;&#x65E5;&#x5FD7;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EA4;&#x6362;&#x673A;&#xFF08;exchange&#xFF09;&#xFF1A;</p>
+<pre><code>channel.exchange_declare(exchange=&apos;direct_logs&apos;,
+                         type=&apos;direct&apos;)
+</code></pre><p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53D1;&#x9001;&#x4E00;&#x5219;&#x6D88;&#x606F;&#xFF1A;</p>
+<pre><code>channel.basic_publish(exchange=&apos;direct_logs&apos;,
+                      routing_key=severity,
+                      body=message)
+</code></pre><p>&#x6211;&#x4EEC;&#x5148;&#x5047;&#x8BBE;&#x201C;severity&#x201D;&#x7684;&#x503C;&#x662F;info&#x3001;warning&#x3001;error&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x3002;</p>
+<h2 id="&#x8BA2;&#x9605;">&#x8BA2;&#x9605; </h2>
+<p>&#x5904;&#x7406;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x7684;&#x65B9;&#x5F0F;&#x548C;&#x4E4B;&#x524D;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x4F8B;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x4E3A;&#x6211;&#x4EEC;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x6BCF;&#x4E2A;&#x4E25;&#x91CD;&#x7EA7;&#x522B;&#x5206;&#x522B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7ED1;&#x5B9A;&#x3002;</p>
+<pre><code>result = channel.queue_declare(exclusive=True)
+queue_name = result.method.queue
+
+for severity in severities:
+    channel.queue_bind(exchange=&apos;direct_logs&apos;,
+                       queue=queue_name,
+                       routing_key=severity)
+</code></pre><h2 id="&#x4EE3;&#x7801;&#x6574;&#x5408;">&#x4EE3;&#x7801;&#x6574;&#x5408; </h2>
+<p><img src="../assets/p_x_direct_multiple_q1_q2.png" alt=""></p>
+<p><strong>emit_log_direct.py&#x7684;</strong><a href="https://github.com/rabbitmq/rabbitmq-tutorials/blob/master/python/emit_log_direct.py" target="_blank"><strong>&#x4EE3;&#x7801;</strong></a>&#xFF1A;</p>
+<pre><code>#!/usr/bin/env python
+import pika
+import sys
+
+connection = pika.BlockingConnection(pika.ConnectionParameters(
+        host=&apos;localhost&apos;))
+channel = connection.channel()
+
+channel.exchange_declare(exchange=&apos;direct_logs&apos;,
+                         type=&apos;direct&apos;)
+
+severity = sys.argv[1] if len(sys.argv) &gt; 1 else &apos;info&apos;
+message = &apos; &apos;.join(sys.argv[2:]) or &apos;Hello World!&apos;
+channel.basic_publish(exchange=&apos;direct_logs&apos;,
+                      routing_key=severity,
+                      body=message)
+print &quot; [x] Sent %r:%r&quot; % (severity, message)
+connection.close()
+</code></pre><p><strong>receive_logs_direct.py&#x7684;</strong><a href="https://github.com/rabbitmq/rabbitmq-tutorials/blob/master/python/receive_logs_direct.py" target="_blank"><strong>&#x4EE3;&#x7801;</strong></a>&#xFF1A;</p>
+<pre><code>#!/usr/bin/env python
+import pika
+import sys
+
+connection = pika.BlockingConnection(pika.ConnectionParameters(
+        host=&apos;localhost&apos;))
+channel = connection.channel()
+
+channel.exchange_declare(exchange=&apos;direct_logs&apos;,
+                         type=&apos;direct&apos;)
+
+result = channel.queue_declare(exclusive=True)
+queue_name = result.method.queue
+
+severities = sys.argv[1:]
+if not severities:
+    print &gt;&gt; sys.stderr, &quot;Usage: %s [info] [warning] [error]&quot; % \
+                         (sys.argv[0],)
+    sys.exit(1)
+
+for severity in severities:
+    channel.queue_bind(exchange=&apos;direct_logs&apos;,
+                       queue=queue_name,
+                       routing_key=severity)
+
+print &apos; [*] Waiting for logs. To exit press CTRL+C&apos;
+
+def callback(ch, method, properties, body):
+    print &quot; [x] %r:%r&quot; % (method.routing_key, body,)
+
+channel.basic_consume(callback,
+                      queue=queue_name,
+                      no_ack=True)
+
+channel.start_consuming()
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x53EA;&#x662F;&#x4FDD;&#x5B58;warning&#x548C;error&#x7EA7;&#x522B;&#x7684;&#x65E5;&#x5FD7;&#x5230;&#x78C1;&#x76D8;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x6253;&#x5F00;&#x63A7;&#x5236;&#x53F0;&#x5E76;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>$ python receive_logs_direct.py warning error &gt; logs_from_rabbit.log
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x6240;&#x6709;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x90FD;&#x8F93;&#x51FA;&#x5230;&#x5C4F;&#x5E55;&#x4E2D;&#xFF0C;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC8;&#x7AEF;&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>$ python receive_logs_direct.py info warning error
+ [*] Waiting for logs. To exit press CTRL+C
+</code></pre><p>&#x5982;&#x679C;&#x8981;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;error&#x7EA7;&#x522B;&#x7684;&#x65E5;&#x5FD7;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>$ python emit_log_direct.py error &quot;Run. Run. Or it will explode.&quot;
+ [x] Sent &apos;error&apos;:&apos;Run. Run. Or it will explode.&apos;
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../pythonclient/publishsubscribe.html" class="navigation navigation-prev " aria-label="Previous page: 发布/订阅"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../pythonclient/topics.html" class="navigation navigation-next " aria-label="Next page: 主题交换机"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontsettings":{"family":"sans","size":2,"theme":"white"},"toggle-chapters":{},"splitter":{},"emphasize":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book django项目 -->
+</html>

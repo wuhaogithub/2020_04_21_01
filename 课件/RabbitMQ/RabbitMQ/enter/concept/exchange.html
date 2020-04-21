@@ -1,0 +1,506 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    <!-- Start book django项目 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Exchange\(交换器\) | django项目</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-emphasize/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../enter/concept/connectionchannel.html" />
+    
+    
+    <link rel="prev" href="../../enter/concept.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="2.1.1"
+        data-chapter-title="Exchange\(交换器\)"
+        data-filepath="enter/concept/exchange.md"
+        data-basepath="../.."
+        data-revision="Sun Nov 24 2019 08:04:49 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="bg.html">
+            
+                
+                    <a href="../../bg.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        RabbitMQ简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="enter.html">
+            
+                
+                    <a href="../../enter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        RabbitMQ入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="enter/concept.html">
+            
+                
+                    <a href="../../enter/concept.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基本概念
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1" data-path="enter/concept/exchange.html">
+            
+                
+                    <a href="../../enter/concept/exchange.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Exchange\(交换器\)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="enter/concept/connectionchannel.html">
+            
+                
+                    <a href="../../enter/concept/connectionchannel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        Channel\(消息通道\)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="enter/concept/amqp.html">
+            
+                
+                    <a href="../../enter/concept/amqp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        AMQP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="enter/concept/amqp/exchange.html">
+            
+                
+                    <a href="../../enter/concept/amqp/exchange.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                        交换机
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="enter/concept/amqp/queue.html">
+            
+                
+                    <a href="../../enter/concept/amqp/queue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                        队列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="enter/concept/amqp/bind.html">
+            
+                
+                    <a href="../../enter/concept/amqp/bind.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                        绑定
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="enter/concept/amqp/consumer.html">
+            
+                
+                    <a href="../../enter/concept/amqp/consumer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                        消费者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="enter/concept/amqp/message.html">
+            
+                
+                    <a href="../../enter/concept/amqp/message.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.5.</b>
+                        
+                        消息机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="enter/concept/amqp/connect.html">
+            
+                
+                    <a href="../../enter/concept/amqp/connect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.6.</b>
+                        
+                        连接
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="pythonclient.html">
+            
+                
+                    <a href="../../pythonclient.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        客户端开发入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="pythonclient/hellorabbitmq.html">
+            
+                
+                    <a href="../../pythonclient/hellorabbitmq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        快速入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="pythonclient/queue.html">
+            
+                
+                    <a href="../../pythonclient/queue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        工作队列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="pythonclient/publishsubscribe.html">
+            
+                
+                    <a href="../../pythonclient/publishsubscribe.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        发布/订阅
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="pythonclient/routing.html">
+            
+                
+                    <a href="../../pythonclient/routing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        路由
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="pythonclient/topics.html">
+            
+                
+                    <a href="../../pythonclient/topics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        主题交换机
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="pythonclient/rpc.html">
+            
+                
+                    <a href="../../pythonclient/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        远程过程调用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >django项目</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="exchange&#x4EA4;&#x6362;&#x5668;">Exchange(&#x4EA4;&#x6362;&#x5668;)</h1>
+<h3 id="&#x6982;&#x5FF5;">&#x6982;&#x5FF5;</h3>
+<p><strong>Exchange: &#x4EA4;&#x6362;&#x5668;</strong>&#x3002;&#x5B83;&#x6307;&#x5B9A;&#x6D88;&#x606F;&#x6309;&#x4EC0;&#x4E48;&#x89C4;&#x5219;&#xFF0C;&#x8DEF;&#x7531;&#x5230;&#x54EA;&#x4E2A;&#x961F;&#x5217;&#x3002;&#x751F;&#x4EA7;&#x8005;&#x5C06;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5230; Exchange (&#x4EA4;&#x6362;&#x5668;&#xFF0C;&#x901A;&#x5E38;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5927;&#x5199;&#x7684; &quot;X&quot; &#x6765;&#x8868;&#x793A;)&#xFF0C;&#x7531;&#x4EA4;&#x6362;&#x5668;&#x5C06;&#x6D88;&#x606F;&#x8DEF;&#x7531;&#x5230;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x961F;&#x5217;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x8DEF;&#x7531;&#x4E0D;&#x5230;&#xFF0C;&#x6216;&#x8BB8;&#x4F1A;&#x8FD4;&#x56DE;&#x7ED9;&#x751F;&#x4EA7;&#x8005;&#xFF0C;&#x6216;&#x8BB8;&#x76F4;&#x63A5;&#x4E22;&#x5F03;&#x3002;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x5C06; RabbitMQ &#x4E2D;&#x7684;&#x4EA4;&#x6362;&#x5668;&#x770B;&#x4F5C;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x4F53;&#x3002;</p>
+<p><img src="../../assets/&#x4EA4;&#x6362;&#x673A;.png" alt=""></p>
+<p><strong>RoutingKey: &#x8DEF;&#x7531;&#x952E;</strong> &#x3002;&#x8DEF;&#x7531;&#x5173;&#x952E;&#x5B57;&#xFF0C;exchange&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x8FDB;&#x884C;&#x6D88;&#x606F;&#x6295;&#x9012;&#x3002;&#x751F;&#x4EA7;&#x8005;&#x5C06;&#x6D88;&#x606F;&#x53D1;&#x7ED9;&#x4EA4;&#x6362;&#x5668; &#x7684;&#x65F6;&#x5019;&#xFF0C; &#x4E00;&#x822C;&#x4F1A;&#x6307;&#x5B9A; &#x4E00;&#x4E2A; RoutingKey &#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x8FD9;&#x4E2A;&#x6D88;&#x606F;&#x7684;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A; RoutingKey &#x9700;&#x8981;&#x4E0E;&#x4EA4;&#x6362;&#x5668;&#x7C7B;&#x578B;&#x548C;&#x7ED1;&#x5B9A;&#x952E; (BindingKey) &#x8054;&#x5408;&#x4F7F;&#x7528;&#x624D;&#x80FD;&#x6700;&#x7EC8;&#x751F;&#x6548;&#x3002;</p>
+<p>&#x5728;&#x4EA4;&#x6362;&#x5668;&#x7C7B;&#x578B;&#x548C;&#x7ED1;&#x5B9A;&#x952E; (BindingKey) &#x56FA;&#x5B9A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x751F;&#x4EA7;&#x8005;&#x53EF;&#x4EE5;&#x5728;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7ED9;&#x4EA4;&#x6362;&#x5668;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x6307;&#x5B9A; RoutingKey &#x6765;&#x51B3;&#x5B9A;&#x6D88;&#x606F;&#x6D41;&#x5411;&#x54EA;&#x91CC;&#x3002;</p>
+<p><strong>Binding: &#x7ED1;&#x5B9A;</strong> &#x3002;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x628A;exchange&#x548C;queue&#x6309;&#x7167;&#x8DEF;&#x7531;&#x89C4;&#x5219;&#x7ED1;&#x5B9A;&#x8D77;&#x6765;&#x3002; RabbitMQ &#x4E2D;&#x901A;&#x8FC7;&#x7ED1;&#x5B9A;&#x5C06;&#x4EA4;&#x6362;&#x5668;&#x4E0E;&#x961F;&#x5217;&#x5173;&#x8054;&#x8D77;&#x6765;&#xFF0C;&#x5728;&#x7ED1;&#x5B9A;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x822C;&#x4F1A;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x7ED1;&#x5B9A;&#x952E; ( BindingKey ) &#xFF0C;&#x8FD9;&#x6837; RabbitMQ &#x5C31;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x6B63;&#x786E;&#x5730;&#x5C06;&#x6D88;&#x606F;&#x8DEF;&#x7531; &#x5230; &#x961F;&#x5217;&#x4E86;&#x3002;</p>
+<p><img src="../../assets/binding.png" alt=""></p>
+<p>&#x751F;&#x4EA7;&#x8005;&#x5C06;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x7ED9;&#x4EA4;&#x6362;&#x5668;&#x65F6;&#xFF0C; &#x9700;&#x8981;&#x4E00;&#x4E2A; RoutingKey &#xFF0C; &#x5F53; BindingKey &#x548C; RoutingKey &#x76F8;&#x5339;&#x914D;&#x65F6;&#xFF0C; &#x6D88;&#x606F;&#x4F1A;&#x88AB;&#x8DEF;&#x7531; &#x5230;&#x5BF9;&#x5E94;&#x7684; &#x961F;&#x5217; &#x4E2D;&#x3002;&#x5728;&#x7ED1;&#x5B9A;&#x591A;&#x4E2A;&#x961F;&#x5217;&#x5230;&#x540C;&#x4E00;&#x4E2A;&#x4EA4;&#x6362;&#x5668;&#x7684;&#x65F6;&#x5019; &#xFF0C; &#x8FD9;&#x4E9B;&#x7ED1;&#x5B9A;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x76F8; &#x540C;&#x7684; BindingKey&#x3002;BindingKey &#x5E76;&#x4E0D;&#x662F;&#x5728;&#x6240;&#x6709;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x751F;&#x6548;&#xFF0C;&#x5B83;&#x4F9D;&#x8D56;&#x4E8E;&#x4EA4;&#x6362;&#x5668;&#x7C7B;&#x578B; &#xFF0C; &#x6BD4;&#x5982; fanout &#x7C7B;&#x578B; &#x7684;&#x4EA4;&#x6362;&#x5668;&#x5C31;&#x4F1A;&#x65E0;&#x89C6; BindingKey &#xFF0C; &#x800C;&#x662F;&#x5C06;&#x6D88;&#x606F;&#x8DEF;&#x7531;&#x5230;&#x6240;&#x6709;&#x7ED1;&#x5B9A;&#x5230;&#x8BE5;&#x4EA4;&#x6362;&#x5668;&#x7684;&#x961F;&#x5217;&#x4E2D; &#x3002;</p>
+<h3 id="&#x4EA4;&#x6362;&#x5668;&#x7C7B;&#x578B;">&#x4EA4;&#x6362;&#x5668;&#x7C7B;&#x578B;</h3>
+<p>RabbitMQ &#x5E38;&#x7528;&#x7684;&#x4EA4;&#x6362;&#x5668;&#x7C7B;&#x578B;&#x6709; fanout &#x3001; direct &#x3001; topic &#x3001; headers &#x8FD9;&#x56DB;&#x79CD; &#x3002;</p>
+<p><strong>fanout</strong></p>
+<p>&#x5B83;&#x4F1A;&#x628A;&#x6240;&#x6709;&#x53D1;&#x9001;&#x5230;&#x8BE5;&#x4EA4;&#x6362;&#x5668;&#x7684;&#x6D88;&#x606F;&#x8DEF;&#x7531;&#x5230;&#x6240;&#x6709;&#x4E0E;&#x8BE5;&#x4EA4;&#x6362;&#x5668;&#x7ED1;&#x5B9A;&#x7684;&#x961F;&#x5217;&#x4E2D;&#x3002;</p>
+<p><strong>direct</strong></p>
+<p>&#x5B83;&#x4F1A;&#x628A;&#x6D88;&#x606F;&#x8DEF;&#x7531;&#x5230;&#x90A3;&#x4E9B; BindingKey &#x548C; RoutingKey&#x5B8C;&#x5168;&#x5339;&#x914D;&#x7684;&#x961F;&#x5217;&#x4E2D;&#x3002;</p>
+<p><img src="../../assets/exchange_type_direct.png" alt=""></p>
+<p><strong>topic</strong></p>
+<p>&#x5B83;&#x4E0E; direct &#x7C7B;&#x578B;&#x7684;&#x4EA4;&#x6362;&#x5668;&#x76F8;&#x4F3C;&#xFF0C;&#x4E5F;&#x662F;&#x5C06;&#x6D88;&#x606F;&#x8DEF;&#x7531;&#x5230; BindingKey &#x548C; RoutingKey &#x76F8;&#x5339;&#x914D;&#x7684;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x4F46;&#x8FD9;&#x91CC;&#x7684;&#x5339;&#x914D;&#x89C4;&#x5219;&#x6709;&#x4E9B;&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x7EA6;&#x5B9A;:</p>
+<p>RoutingKey &#x4E3A;&#x4E00;&#x4E2A;&#x70B9;&#x53F7;&quot;. &quot;&#x5206;&#x9694;&#x7684;&#x5B57;&#x7B26;&#x4E32;(&#x88AB;&#x70B9;&#x53F7;&quot;. &quot;&#x5206;&#x9694;&#x5F00;&#x7684;&#x6BCF;&#x4E00;&#x6BB5;&#x72EC;&#x7ACB;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x5355;&#x8BCD; )&#xFF0C;&#x5982; &quot;com.rabbitmq.client&quot;</p>
+<p>BindingKey &#x548C; RoutingKey &#x4E00;&#x6837;&#x4E5F;&#x662F;&#x70B9;&#x53F7;&quot; &quot;&#x5206;&#x9694;&#x7684;&#x5B57;&#x7B26;&#x4E32;;</p>
+<p>BindingKey &#x4E2D;&#x53EF;&#x4EE5;&#x5B58;&#x5728;&#x4E24;&#x79CD;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x4E32;&quot;*&quot;&#x548C;&quot;#&quot;&#xFF0C;&#x7528;&#x4E8E;&#x505A;&#x6A21;&#x7CCA;&#x5339;&#x914D;&#xFF0C;&#x5176;&#x4E2D;&quot;#&quot;&#x7528;&#x4E8E;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#xFF0C;&#x5401;&quot;&#x7528;&#x4E8E;&#x5339;&#x914D;&#x591A;&#x89C4;&#x683C;&#x5355;&#x8BCD;(&#x53EF;&#x4EE5;&#x662F;&#x96F6;&#x4E2A;)&#x3002;</p>
+<p><img src="../../assets/exchange_type_topic.png" alt=""></p>
+<p><strong>headers</strong></p>
+<p>headers &#x7C7B;&#x578B;&#x7684;&#x4EA4;&#x6362;&#x5668;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x8DEF;&#x7531;&#x952E;&#x7684;&#x5339;&#x914D;&#x89C4;&#x5219;&#x6765;&#x8DEF;&#x7531;&#x6D88;&#x606F;&#xFF0C;&#x800C;&#x662F;&#x6839;&#x636E;&#x53D1;&#x9001;&#x7684;&#x6D88;&#x606F;&#x5185;&#x5BB9;&#x4E2D;<br>&#x7684; headers &#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;&#x5728;&#x7ED1;&#x5B9A;&#x961F;&#x5217;&#x548C;&#x4EA4;&#x6362;&#x5668;&#x65F6;&#x5236;&#x5B9A;&#x4E00;&#x7EC4;&#x952E;&#x503C;&#x5BF9; &#xFF0C; &#x5F53;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;&#x4EA4;&#x6362;&#x5668;&#x65F6;&#xFF0C;<br>RabbitMQ &#x4F1A;&#x83B7;&#x53D6;&#x5230;&#x8BE5;&#x6D88;&#x606F;&#x7684; headers (&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x5F62;&#x5F0F;) &#xFF0C;&#x5BF9;&#x6BD4;&#x5176;&#x4E2D;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x662F;&#x5426;&#x5B8C;&#x5168;<br>&#x5339;&#x914D;&#x961F;&#x5217;&#x548C;&#x4EA4;&#x6362;&#x5668;&#x7ED1;&#x5B9A;&#x65F6;&#x6307;&#x5B9A;&#x7684;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x5982;&#x679C;&#x5B8C;&#x5168;&#x5339;&#x914D;&#x5219;&#x6D88;&#x606F;&#x4F1A;&#x8DEF;&#x7531;&#x5230;&#x8BE5;&#x961F;&#x5217;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x4F1A;&#x8DEF;&#x7531;<br>&#x5230;&#x8BE5;&#x961F;&#x5217; &#x3002; headers &#x7C7B;&#x578B;&#x7684;&#x4EA4;&#x6362;&#x5668;&#x6027;&#x80FD;&#x4F1A;&#x5F88;&#x5DEE;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x4E0D;&#x5B9E;&#x7528;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x4E0D;&#x4F1A;&#x770B;&#x5230;&#x5B83;&#x7684;&#x5B58;&#x5728;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../enter/concept.html" class="navigation navigation-prev " aria-label="Previous page: 基本概念"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../enter/concept/connectionchannel.html" class="navigation navigation-next " aria-label="Next page: Channel\(消息通道\)"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontsettings":{"family":"sans","size":2,"theme":"white"},"toggle-chapters":{},"splitter":{},"emphasize":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book django项目 -->
+</html>
